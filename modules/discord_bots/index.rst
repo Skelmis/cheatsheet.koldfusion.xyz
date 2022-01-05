@@ -7,5 +7,6 @@ Discord Bots
    :caption: Contents:
 
    bot_base/index.rst
+   document.rst
 
 

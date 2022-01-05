@@ -11,8 +11,10 @@ Database
 
 There is a built-in database management system using Mongo.
 
-This will dynamically add `Documents <https://github.com/Skelmis/DPY-Bot-Base/blob/master/bot_base/db/document.py>`_
-for your usage as required, so no need to manually define them.
+This will dynamically add ``Documents``
+for your usage as required, so no need to manually define them.\
+
+Read more about them here: :ref:`my-reference-label`
 
 **Usage:**
 
@@ -42,47 +44,6 @@ when you initialise the bot.
         command_prefix="!",
         leave_db=True
     )
-
-Converters
-^^^^^^^^^^
-
-The Document class features the ability to use converters,
-so rather then get ``Dict``'s back you get class instances.
-
-Dynamically created Document's will not use converters, if
-you wish to use them then your ``MongoManager`` should have
-them manually defined via a subclass and disabling the
-built-in manager class.
-
-.. code-block:: python
-    :linenos:
-
-    from typing import Any
-
-    class Options:
-        """
-        Our database is:
-
-        {
-            "_id": Any,
-            "guild_id": int
-        }
-        """
-        def __init__(self, _id, guild_id):
-            self._id: Any = _id
-            self.guild_id: int = guild_id
-
-Then when we wish to use it we can do:
-
-.. code-block:: python
-    :linenos:
-
-    options_db: Document = Document(
-        self.db, "options", converter=Options
-    )
-
-    my_option: Options = await options_db.find(document_id_here)
-    print(f"This option is for {my_option.guild_id}")
 
 Blacklist System
 ****************
@@ -258,7 +219,7 @@ actually get said object. These also return the
 wrapped instances of said classes for ease of use.
 
 Ideally you would use these *everywhere* instead of
-the regular ``get_``|``fetch_`` methods.
+the regular ``get_ | fetch_`` methods.
 
 .. code-block:: python
 
