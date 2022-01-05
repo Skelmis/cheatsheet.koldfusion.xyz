@@ -90,7 +90,7 @@ the source code `here <https://github.com/Skelmis/DPY-Bot-Base/blob/master/bot_b
     # If you want to only update ONE field,
     # then you should use ``update_field_to`` to save
     # needing to fetch the data before
-    await config.update_field_to(document_id, "prefix": ".")
+    await config.update_field_to(document_id, "prefix", ".")
     data = await config.find(document_id)
     print(data) # -> {"_id": document_id, "prefix": ".", "guild_name": "testing"}
 

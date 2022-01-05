@@ -266,7 +266,7 @@ the source code <a class="reference external" href="https://github.com/Skelmis/D
 <span class="linenos">27</span><span class="c1"># If you want to only update ONE field,</span>
 <span class="linenos">28</span><span class="c1"># then you should use ``update_field_to`` to save</span>
 <span class="linenos">29</span><span class="c1"># needing to fetch the data before</span>
-<span class="linenos">30</span><span class="k">await</span> <span class="n">config</span><span class="o">.</span><span class="n">update_field_to</span><span class="p">(</span><span class="n">document_id</span><span class="p">,</span> <span class="s2">"prefix"</span><span class="p">:</span> <span class="s2">"."</span><span class="p">)</span>
+<span class="linenos">30</span><span class="k">await</span> <span class="n">config</span><span class="o">.</span><span class="n">update_field_to</span><span class="p">(</span><span class="n">document_id</span><span class="p">,</span> <span class="s2">"prefix"</span><span class="p">,</span> <span class="s2">"."</span><span class="p">)</span>
 <span class="linenos">31</span><span class="n">data</span> <span class="o">=</span> <span class="k">await</span> <span class="n">config</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">document_id</span><span class="p">)</span>
 <span class="linenos">32</span><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="c1"># -&gt; {"_id": document_id, "prefix": ".", "guild_name": "testing"}</span>
 <span class="linenos">33</span>
