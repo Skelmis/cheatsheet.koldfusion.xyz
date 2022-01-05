@@ -28,7 +28,7 @@ General setup (Using BotBase)
 
 Want to know how to get autocomplete?
 You will need to follow the ``Converters in BotBase``
-section, just with our without converters.
+section, just with or without converters.
 Its the exact same process.
 
 .. code-block:: python
