@@ -258,7 +258,7 @@ actually get said object. These also return the
 wrapped instances of said classes for ease of use.
 
 Ideally you would use these *everywhere* instead of
-the regular ``get_``|``fetch_`` methods.
+the regular ``get_ | fetch_`` methods.
 
 .. code-block:: python
 
