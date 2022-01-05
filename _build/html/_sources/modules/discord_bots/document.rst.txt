@@ -6,6 +6,7 @@ Mongo Document
 The bread and butter on my bots. The ``Document`` class which can be found
 `here <https://github.com/Skelmis/DPY-Bot-Base/blob/master/bot_base/db/document.py>`_
 
+This document is written against ``_version = 9`` and make's no guarantees otherwise.
 
 General setup (Outside of BotBase)
 **********************************
