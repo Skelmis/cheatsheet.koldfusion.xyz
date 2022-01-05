@@ -10,9 +10,9 @@ This information is primarily for my own use. Parts may be incomplete, out of da
    :caption: Contents:
 
    modules/discord_bots/index.rst
-   modules/docker/index.rst
-   modules/pypi/index.rst
-   modules/sherlock/index.rst
+   modules/docker.rst
+   modules/pypi.rst
+   modules/sherlock.rst
 
 
 
