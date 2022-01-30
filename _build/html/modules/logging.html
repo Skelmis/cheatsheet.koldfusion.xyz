@@ -2,11 +2,13 @@
 <html class="no-js">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="#" />
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" />
 
-    <meta name="generator" content="sphinx-4.0.2, furo 2021.11.23"/><title>Search - Ethan's Cheat Sheet  documentation</title><link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=7f0192ddeb2adecfbaa87ffbcf67d16358b30bc1" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=0af69da206d614734f649b27d4cdc2dd6c31f41d" />
+    <meta name="generator" content="sphinx-4.0.2, furo 2021.11.23"/>
+        <title>Python Logging - Ethan&#39;s Cheat Sheet documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=7f0192ddeb2adecfbaa87ffbcf67d16358b30bc1" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=0af69da206d614734f649b27d4cdc2dd6c31f41d" />
     
     
 
@@ -120,7 +122,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">Ethan's Cheat Sheet  documentation</div></a>
+      <a href="../index.html"><div class="brand">Ethan's Cheat Sheet  documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -140,12 +142,12 @@
   <aside class="sidebar-drawer">
     <div class="sidebar-container">
       
-      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
   
   
   <span class="sidebar-brand-text">Ethan's Cheat Sheet  documentation</span>
   
-</a><form class="sidebar-search-container" method="get" action="#" role="search">
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
   <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
@@ -153,16 +155,15 @@
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="modules/discord_bots/index.html">Discord Bots</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="modules/discord_bots/bot_base/index.html">Bot Template</a></li>
-<li class="toctree-l2"><a class="reference internal" href="modules/discord_bots/document.html">Mongo Document</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="discord_bots/index.html">Discord Bots</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="discord_bots/bot_base/index.html">Bot Template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discord_bots/document.html">Mongo Document</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="modules/code_quality.html">Code Quality</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/docker.html">Docker</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/logging.html">Python Logging</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/pypi.html">Pypi</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/sherlock.html">Sherlock</a></li>
+<li class="toctree-l1"><a class="reference internal" href="code_quality.html">Code Quality</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docker.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pypi.html">Pypi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sherlock.html">Sherlock</a></li>
 </ul>
 
 </div>
@@ -189,17 +190,26 @@
           </label>
         </div>
         <article role="main">
-          
-<noscript>
-<div class="admonition error">
-  <p class="admonition-title">Error</p>
-  <p>
-    Please activate JavaScript to enable the search functionality.
-  </p>
+          <div class="section" id="python-logging">
+<h1>Python Logging<a class="headerlink" href="#python-logging" title="Permalink to this headline">¶</a></h1>
+<p>Python has some beautiful logging.
+Here is my goto format:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kn">import</span> <span class="nn">logging</span>
+<span class="linenos">2</span><span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span>
+<span class="linenos">3</span>    <span class="nb">format</span><span class="o">=</span><span class="s2">"</span><span class="si">%(levelname)-7s</span><span class="s2"> | </span><span class="si">%(asctime)s</span><span class="s2"> | </span><span class="si">%(filename)12s</span><span class="s2">:</span><span class="si">%(funcName)-12s</span><span class="s2"> | </span><span class="si">%(message)s</span><span class="s2">"</span><span class="p">,</span>
+<span class="linenos">4</span>    <span class="n">datefmt</span><span class="o">=</span><span class="s2">"%I:%M:%S %p </span><span class="si">%d</span><span class="s2">/%m/%Y"</span><span class="p">,</span>
+<span class="linenos">5</span>    <span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">INFO</span><span class="p">,</span>
+<span class="linenos">6</span><span class="p">)</span>
+</pre></div>
 </div>
-</noscript>
-
-<div id="search-results"></div>
+<p>Killing individual loggers is quite nice
+when you don’t want to hear about there problems.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kn">import</span> <span class="nn">logging</span>
+<span class="linenos">2</span><span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s2">"module.submodule"</span><span class="p">)</span>
+<span class="linenos">3</span><span class="n">logger</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">WARNING</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
 
         </article>
       </div>
@@ -214,6 +224,10 @@
               Copyright &#169; 2021, Ethan |
           Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
           <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+            | <a class="muted-link" href="../_sources/modules/logging.rst.txt"
+               rel="nofollow">
+              Show Source
+            </a>
         </div>
         
       </footer>
@@ -224,13 +238,10 @@
       
     </aside>
   </div>
-</div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/scripts/furo.js"></script>
-    
-<script src="_static/searchtools.js"></script>
-<script src="_static/language_data.js"></script>
-<script src="searchindex.js"></script></body>
+</div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/furo.js"></script>
+    </body>
 </html>

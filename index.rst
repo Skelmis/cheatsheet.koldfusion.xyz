@@ -12,6 +12,7 @@ This information is primarily for my own use. Parts may be incomplete, out of da
    modules/discord_bots/index.rst
    modules/code_quality.rst
    modules/docker.rst
+   modules/logging.rst
    modules/pypi.rst
    modules/sherlock.rst
 
