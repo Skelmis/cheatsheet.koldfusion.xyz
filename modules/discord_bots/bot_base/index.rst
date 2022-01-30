@@ -254,6 +254,40 @@ If you wish to fix this, I recommended doing the following.
         # Now you have the correct autocomplete for member
 
 
+Caches
+******
+
+The template features a ``TimedCache`` class, which
+functions as you'd expect a ``TimedCache`` to function.
+
+Check it out `here <https://github.com/Skelmis/DPY-Bot-Base/blob/master/bot_base/caches/timed.py>`_
+
+.. code-block:: python
+    :linenos:
+
+    import datetime
+
+    from bot_base.caches import TimedCache
+
+    tc = TimedCache()
+    tc.add_entry("key", "value") # Won't expire
+    tc.add_entry("timed_key", "value", ttl=datetime.timedelta(days=1)) # Valid for 1 day
+
+    tc.add_entry("key", "value2") # Throws ExistingEntry
+    tc.add_entry("key", "value2", override=True) # Overwrites the key
+
+    value = tc.get_entry("key")
+    assert value == "value2"
+
+    tc.delete_entry("key")
+    tc.get_entry("key") # Will throw NonExistentEntry
+
+    tc.force_clean() # Evicts expired items
+
+    # Check for existence
+    assert "timed_key" in tc
+
+
 Optimisation
 ************
 
