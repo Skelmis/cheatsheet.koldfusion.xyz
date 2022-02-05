@@ -34,6 +34,9 @@ Read more about them here: :ref:`my-reference-label`
 
     # For more usages, view the Document class linked before.
 
+    # To create a backup of the collection, simply call
+    await bot.db.run_backup()
+
 If you do not wish for a database to be setup, simply do this
 when you initialise the bot.
 
