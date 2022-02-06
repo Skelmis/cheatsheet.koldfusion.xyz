@@ -12,7 +12,7 @@ Database
 There is a built-in database management system using Mongo.
 
 This will dynamically add ``Documents``
-for your usage as required, so no need to manually define them.\
+for your usage as required, so no need to manually define them.
 
 Read more about them here: :ref:`my-reference-label`
 
