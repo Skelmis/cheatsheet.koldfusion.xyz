@@ -15,6 +15,7 @@ This information is primarily for my own use. Parts may be incomplete, out of da
    modules/logging.rst
    modules/pypi.rst
    modules/sherlock.rst
+   modules/testing/index.rst
 
 
 
