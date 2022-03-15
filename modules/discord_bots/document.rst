@@ -7,7 +7,8 @@ The bread and butter on my bots. The ``Document`` class which can be found
 `here <https://github.com/Skelmis/DPY-Bot-Base/blob/master/bot_base/db/document.py>`_
 
 This document is written against ``_version = 9`` and make's no guarantees otherwise.
-You will need to install `here <https://motor.readthedocs.io/>`_
+
+You will also need ``motor`` find it `here <https://motor.readthedocs.io/>`_
 
 General setup (Outside of BotBase)
 **********************************
