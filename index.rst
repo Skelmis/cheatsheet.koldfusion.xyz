@@ -16,6 +16,7 @@ This information is primarily for my own use. Parts may be incomplete, out of da
    modules/pypi.rst
    modules/sherlock.rst
    modules/testing/index.rst
+   modules/cyber_security/index.rst
 
 
 
