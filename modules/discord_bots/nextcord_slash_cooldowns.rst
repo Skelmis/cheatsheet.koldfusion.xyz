@@ -237,6 +237,37 @@ Example usage
         await inter.send(f"You can call this {calls_left} times before getting rate-limited")
 
 
+Cooldown checks
+---------------
+
+Here's an example check to only apply a cooldown
+if the first argument is equal to ``1``.
+
+.. code-block:: python
+    :linenos:
+
+    @cooldown(
+        1, 1, bucket=CooldownBucket.args, check=lambda *args, **kwargs: args[0] == 1
+    )
+    async def test_func(*args, **kwargs) -> (tuple, dict):
+        return args, kwargs
+
+Here's one use an async check.
+Functionally its the same as the previous one.
+
+.. code-block:: python
+    :linenos:
+
+        async def mock_db_check(*args, **kwargs):
+        # You can do database calls here or anything
+        # since this is an async context
+        return args[0] == 1
+
+    @cooldown(1, 1, bucket=CooldownBucket.args, check=mock_db_check)
+    async def test_func(*args, **kwargs) -> (tuple, dict):
+        return args, kwargs
+
+
 Custom buckets
 --------------
 
