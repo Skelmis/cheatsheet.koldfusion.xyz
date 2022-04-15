@@ -292,3 +292,20 @@ Heres an example which rate-limits based off of the first argument.
     @cooldown(1, 1, bucket=CustomBucket.first_arg)
     async def test_func(*args, **kwargs):
         .....
+
+
+Stacking cooldown's
+-------------------
+
+Stack as many cooldown's as you want, just note
+Python starts from the bottom decor and works its way up.
+
+.. code-block:: python
+    :linenos:
+
+    # Can call ONCE time_period second using the same args
+    # Can call TWICE time_period second using the same kwargs
+    @cooldown(1, 1, bucket=CooldownBucket.args)
+    @cooldown(2, 1, bucket=CooldownBucket.kwargs)
+    async def test_func(*args, **kwargs) -> (tuple, dict):
+        return args, kwargs
