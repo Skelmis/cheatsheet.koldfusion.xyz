@@ -6,7 +6,7 @@ here is how to use cooldown's (unofficially).
 
 ``pip install function-cooldowns``
 
-Check our the Github `here <https://github.com/Skelmis/Function-Cooldowns>`_
+Check out the Github `here <https://github.com/Skelmis/Function-Cooldowns>`_
 
 Want support? Broke something? Ask me in the nextcord discord, ``Skelmis#9135``
 
