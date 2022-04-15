@@ -120,7 +120,7 @@ every ``15`` seconds in your main file.
     @bot.slash_command(
         description="Ping command",
     )
-    @cooldowns.cooldown(1, 15, bucket=SlashBucket.author)
+    @cooldowns.cooldown(1, 15, bucket=cooldowns.SlashBucket.author)
     async def ping(interaction: nextcord.Interaction):
         await interaction.response.send_message("Pong!")
 
@@ -141,7 +141,7 @@ guild every ``30`` seconds.
     @nextcord.slash_command(
         description="Ping command",
     )
-    @cooldowns.cooldown(1, 30, bucket=SlashBucket.guild)
+    @cooldowns.cooldown(1, 30, bucket=cooldowns.SlashBucket.guild)
     async def ping(self, interaction: nextcord.Interaction):
         await interaction.response.send_message("Pong!")
 
