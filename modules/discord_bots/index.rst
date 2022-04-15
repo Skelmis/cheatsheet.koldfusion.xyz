@@ -8,5 +8,6 @@ Discord Bots
 
    bot_base/index.rst
    document.rst
+   nextcord_slash_cooldowns.rst
 
 
