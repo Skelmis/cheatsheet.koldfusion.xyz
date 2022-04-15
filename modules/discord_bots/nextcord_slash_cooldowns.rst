@@ -1,4 +1,4 @@
-NextCord Slash Cooldown's
+Nextcord Slash Cooldown's
 =========================
 
 Given the lack of official support,
@@ -172,6 +172,7 @@ Here is an example error handler
 
 
 The error ``CallableOnCooldown`` has the following attributes.
+
 func: Callable
     The :type:`Callable` which is currently rate-limited
 cooldown: Cooldown
