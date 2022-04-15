@@ -259,7 +259,7 @@ Functionally its the same as the previous one.
 .. code-block:: python
     :linenos:
 
-        async def mock_db_check(*args, **kwargs):
+    async def mock_db_check(*args, **kwargs):
         # You can do database calls here or anything
         # since this is an async context
         return args[0] == 1
