@@ -295,3 +295,23 @@ Optimisation
 ************
 
 Please note, all wrapped classes are not slotted.
+
+
+Disnake Pagination
+******************
+
+Go read the file and method docstrings for full docs. Find em `here <https://github.com/Skelmis/DPY-Bot-Base/blob/master/bot_base/paginators/disnake_paginator.py>`_
+
+.. code-block:: python
+    :linenos:
+
+    from bot_base.paginators.disnake_paginator import DisnakePaginator
+
+    paginator: DisnakePaginator = DisnakePaginator(
+        3,
+        [1,2,3,4,5,6],
+        page_formatter=lambda paginator, page_items, page_number: disnake.Embed(
+            description="\n".join(item for item in page_items)
+        ).set_footer(text=f"Page {page_number}/{paginator.total_pages}"),
+    )
+    await paginator.start(inter)
