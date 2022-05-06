@@ -314,4 +314,4 @@ Go read the file and method docstrings for full docs. Find em `here <https://git
             description="\n".join(item for item in page_items)
         ).set_footer(text=f"Page {page_number}/{paginator.total_pages}"),
     )
-    await paginator.start(inter)
+    await paginator.start(interaction=inter)
