@@ -62,6 +62,11 @@ Online PowerShell execution
 
 https://tio.run/#powershell
 
+Deobfuscate JS
+**************
+
+http://jsnice.org/
+
 
 Inspiration | Writeups
 ----------------------
