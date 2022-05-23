@@ -20,6 +20,14 @@ Web Page XSS
 
 Simple automated XSS https://xsshunter.com/
 
+
+MD5 based file validation?
+--------------------------
+
+Here's a site providing two files with a collision.
+
+https://www.mscs.dal.ca/~selinger/md5collision/
+
 Web Exploitation
 ----------------
 
