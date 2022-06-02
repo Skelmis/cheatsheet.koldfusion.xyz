@@ -48,6 +48,12 @@ when you initialise the bot.
         leave_db=True
     )
 
+Command Statistics
+******************
+
+By default the bot will log command usage statistics,
+you can disable this by passing ``do_command_stats=False`` in your init.
+
 Blacklist System
 ****************
 
