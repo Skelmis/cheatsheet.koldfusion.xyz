@@ -321,3 +321,11 @@ Go read the file and method docstrings for full docs. Find em `here <https://git
         ).set_footer(text=f"Page {page_number}/{paginator.total_pages}"),
     )
     await paginator.start(interaction=inter)
+    
+
+Async Cog Init
+**************
+
+If you subclass `bot_base.Cog`, you can skip defining an `__init__` method. Further, if you define an async method called `async_init`, this will be called during initialization.
+
+Note this requires loading the cogs from an async context.
