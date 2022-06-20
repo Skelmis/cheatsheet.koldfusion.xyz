@@ -3,8 +3,11 @@
 Mongo Document
 ==============
 
-The bread and butter on my bots. The ``Document`` class which can be found
-`here <https://document.koldfusion.xyz>`_
+The bread and butter on my bots.
+
+This page serves as a legacy back reference. For all future usage please navigate to either
+the code which can be found `here <https://document.koldfusion.xyz>`_ or new documentation
+which can be found `here <https://document.koldfusion.xyz/docs>`_
 
 This document is written against ``_version = 9`` and make's no guarantees otherwise.
 
