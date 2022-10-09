@@ -15,7 +15,7 @@ A TL;DR page for y'all to use as a refresher during the day if you wish.
 * If everything is overwhelming and you just need some space, I recommend going to level 4 and going out onto the car park/roof area. Its a nice view, fresh air and away from people. Just tell Kat before you pop out and she will be **more then accommodating**
 * I don't care if you name drop me or discuss me with colleagues if it comes up
 * If you get lost or anything happens feel free to call me. I am doing nothing all day and can make sure you make it back to everyone else either myself or by getting in contact with people at work whose number I have
-* If your locked out, got near reception and just use the door bell and someone will eventually come and then ask them to get you back to the other applicants
+* If your locked out, go near reception and just use the door bell and someone will eventually come and then ask them to get you back to the other applicants
 
 
 Both
