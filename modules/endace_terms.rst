@@ -39,6 +39,8 @@ Terms
     - 300-399: Redirect, your request looks valid but you made it to the wrong url / the resource has moved to some place else
     - 400-499: You fucked up, your request is invalid, you lack permissions to do this action, the request resource doesnt exist, etc
     - 500-599: The server fucked up, your request was probably fine but the server threw an error somewhere and died during the processing of it
+* UDP: User datagram protocol, aims to be connectionless and does not guarantee the receiver actually got the files. Usually faster because its "fire and forget"
+* TCP: Transmission control protocol, connection oriented and ensures the receiver actually gets the files. More overhead then udp
 
 Questions
 ---------
