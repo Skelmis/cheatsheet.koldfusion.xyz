@@ -5,6 +5,19 @@ A TL;DR page for y'all to use as a refresher during the day if you wish.
 
 *Just my definitions n quick thoughts*
 
+**Notes**
+
+* Its better to say "I'm sorry, I don't understand what your asking about" versus trying to umm and ahh your way through it I think
+* Your interviewers are nice people, don't be scared. Remember, its just a conversation
+* You don't have to get everything right, its an internship. You are there to learn. They care more about your problem solving skills and how you talk/work through the problems they ask rather then simply being able to answer niche questions
+* Bathrooms are in the stairs, you will need a key card to get back onto the floor. If you get stuck, go back down the ground floor and go back up the elevator to the 6th floor because that route doesn't require a keycard
+* Everyone at the company is really nice, if you get lost or anything you can literally ask anyone and they will help you
+* If everything is overwhelming and you just need some space, I recommend going to level 4 and going out onto the car park/roof area. Its a nice view, fresh air and away from people. Just tell Kat before you pop out and she will be **more then accommodating**
+* I don't care if you name drop me or discuss me with colleagues if it comes up
+* If you get lost or anything happens feel free to call me. I am doing nothing all day and can make sure you make it back to everyone else either myself or by getting in contact with people at work whose number I have
+* If your locked out, got near reception and just use the door bell and someone will eventually come and then ask them to get you back to the other applicants
+
+
 Both
 ====
 
@@ -51,6 +64,9 @@ Hannah
 
 Traffic Relay in VM's
 
+
+If you talk to Andreas (Mohawk man, currently has dyed hair) and your comfortable, totally bring up the fact you talked to him at the NZCSC. It will reinforce the belief in you as well as reinforce the idea that your truly interested in things because you follow up on them and it was a positive prior interaction. Note if he doesn't remember immediately just say you were with the woman with Ethan and you were asking for his opinions on career growth and just general advice.
+
 Terms
 -----
 
@@ -94,5 +110,9 @@ Questions
     I mean, you can answer this one.
 * Why do we want automated tests?
     Manual testing takes significantly more time and is prone to human error. Automated tests are the same every time they are run, can be done in parallel, etc
-
+* Why do we want power management?
+    - Saves costs for machines not in use
+    - Makes the machine last longer because its not in usage 24/7 being worn down
+* Why do we want load testing?
+    Software behaves differently under various loads, so its useful to test in all scenarios as it better mirrors how the end client uses the product
 
