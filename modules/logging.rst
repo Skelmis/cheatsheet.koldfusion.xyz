@@ -42,3 +42,15 @@ My goto bot setup
     client_logger.setLevel(logging.WARNING)
     http_logger = logging.getLogger("nextcord.http")
     http_logger.setLevel(logging.WARNING)
+
+
+Been directed here from a help context? You likely want this:
+
+.. code-block:: python
+    :linenos:
+
+    logging.basicConfig(
+        format="%(levelname)-7s | %(asctime)s | %(filename)12s:%(funcName)-12s | %(message)s",
+        datefmt="%I:%M:%S %p %d/%m/%Y",
+        level=logging.DEBUG,
+    )
